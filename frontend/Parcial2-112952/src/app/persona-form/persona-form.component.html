@@ -1,0 +1,36 @@
+<app-header [title]="'Cargar nueva persona'" [subtitle]="'Tomas Gutierrez - Legajo: 112952'"></app-header>
+<br>
+<div class="container">
+    <div class="row ">
+
+        <div class="col-6">
+            <label for="nombre" class="form-label">Nombre:</label>
+            <input type="text" class="form-control" name="nombre" [(ngModel)]="nombre">
+        </div>
+        <div class="col-6">
+            <label for="apellido" class="form-label">Apellido:</label>
+            <input type="text" class="form-control" name="apellido" [(ngModel)]="apellido">
+        </div>
+    </div>
+    
+    <div class="row ">
+        <div class="col-md-6">
+            <label for="dni" class="form-label">Dni:</label>
+            <input type="text" class="form-control" name="dni" [(ngModel)]="dni">
+        </div>
+        <div class="col-md-6">
+            <label for="direccion" class="form-label">Direccion:</label>
+            <input type="text" class="form-control" name="direccion" [(ngModel)]="direccion">
+        </div>
+    </div>
+    
+    <br>
+    
+    <div class="row ">
+        <div class="col-md-12">
+            <button type="submit" class="btn bg-primary"  (click)="onCreate()">Guardar</button>
+            <button type="submit" class="btn bg-primary mx-2" (click)="onCancel()">Cancelar</button>
+        </div>
+    </div>    
+    
+</div>

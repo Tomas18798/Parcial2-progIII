@@ -1,0 +1,23 @@
+<app-header [title]="'Lista de personas'" [subtitle]="'Tomas Gutierrez - Legajo: 112952'" ></app-header>
+<div class="container">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nombre</th>
+                <th>Apellido</th>               
+                <th>Dni</th> 
+                <th>Direccion</th>                             
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let x of personas">
+                <td> {{x.id}} </td>
+                <td> {{x.nombre}} </td>
+                <td> {{x.apellido}} </td>            
+                <td> {{x.dni}} </td>  
+                <td> {{x.direccion}} </td>                        
+            </tr>
+        </tbody>
+    </table>
+</div>
